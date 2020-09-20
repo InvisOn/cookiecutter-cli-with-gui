@@ -51,7 +51,7 @@ def _spawn_gui() -> dict:
 
 
 def user_interface() -> dict:
-    """Spawns the user interface based.
+    """Spawns the user interface.
 
     Returns:
         dict: Arguments passed.

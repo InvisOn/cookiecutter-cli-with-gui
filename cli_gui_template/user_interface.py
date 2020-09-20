@@ -39,6 +39,7 @@ def spawn_cli() -> GooeyParser:
     return vars(parser.parse_args())
 
 
+@Gooey(program_name='Template')
 def spawn_gui():
     """Spawn a GUI based on the CLI without -gui argument.
     """
@@ -46,9 +47,6 @@ def spawn_gui():
         """Wrapper that enables the GUI to spawn without -gui argument.
         -gui argument is not needed because the gui has already been spawned.
         """
-        def wrapper():
-            return cli().parse_args()
+        return cli().parse_args()
 
-        return wrapper()
-
-    Gooey(parse_args_cli)()
+    return parse_args_cli()

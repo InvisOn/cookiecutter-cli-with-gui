@@ -9,8 +9,7 @@ __pycache__/
 .LSOverride
 
 # vscode options
-.vscode*
-.vscode/*
+.vscode/
 
 # Thumbnails
 ._*

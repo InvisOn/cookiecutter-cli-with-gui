@@ -43,10 +43,5 @@ def spawn_cli() -> GooeyParser:
 def spawn_gui():
     """Spawn a GUI based on the CLI without -gui argument.
     """
-    def parse_args_cli():
-        """Wrapper that enables the GUI to spawn without -gui argument.
-        -gui argument is not needed because the gui has already been spawned.
-        """
-        return cli().parse_args()
-
-    return parse_args_cli()
+    # -gui argument is not needed because the gui has already been spawned.
+    return cli().parse_args()

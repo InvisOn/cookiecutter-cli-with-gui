@@ -44,7 +44,7 @@ def _spawn_gui() -> dict:
     """Spawn a GUI based on the CLI without -gui argument.
 
     Returns:
-        dict:
+        dict: Arguments passed.
     """
     # -gui argument is not needed because the gui has already been spawned.
     return _cli().parse_args()
